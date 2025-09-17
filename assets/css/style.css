@@ -1,0 +1,292 @@
+/* === RESET DASAR === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #0d0d0d;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === HEADER & NAVBAR === */
+header {
+  background: #0d0d0d;
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #00ffcc; /* aksen hijau turquoise */
+}
+
+/* === HERO SECTION === */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-image img {
+  display: block;
+  max-width: 80%;   /* biar tidak melebihi layar */
+  height: auto;      /* otomatis mengikuti proporsi asli */
+  border: none;      /* logo biasanya tidak perlu border */
+}
+
+
+/* === SECTION UMUM === */
+section {
+  padding: 60px 20px;
+}
+
+section h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+section h1 span {
+  color: #00ffcc;
+}
+
+section p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #aaa;
+}
+
+/* === SERVICES SECTION === */
+.services {
+  background: #111;
+}
+
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.service-card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* === TEAM SECTION === */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.member {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.member img {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.member h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.member p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+/* === ABOUT PAGE === */
+.about {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.about h1 {
+  margin-bottom: 20px;
+}
+
+.about h3{
+    text-align: center;
+}
+
+.about p {
+  margin-bottom: 20px;
+  color: #bbb;
+  text-align: justify;
+}
+
+/* === PORTFOLIO PAGE === */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.project-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  color: #00ffcc;
+  margin: 10px 0;
+}
+
+/* === CONTACT PAGE === */
+.contact-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-section h1 span {
+  color: #00ffa2;
+}
+
+.contact-section p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.qr-container img {
+  width: 250px; /* ukuran agak besar */
+  height: auto;
+  margin-bottom: 20px;
+  border: 4px solid #00ffa2;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px;
+}
+
+.qr-container a {
+  font-size: 1.2rem;
+  color: #00ffa2;
+  text-decoration: none;
+}
+.qr-container a:hover {
+  text-decoration: underline;
+}
+
+
+/* === FOOTER === */
+footer {
+  background: #0d0d0d;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero img.profile-pic {
+    width: 140px;
+    height: 140px;
+  }
+  nav ul {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero {
+    padding: 50px 20px;
+  }
+  section {
+    padding: 40px 15px;
+  }
+}
